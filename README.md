@@ -34,22 +34,42 @@ nothing to commit, working tree clean
 ## terraform .gitignore :
 
 1. `.terraform/`
+
+
    Игнорируются все файлы в директории `.terraform/`
-2. `*.tfstate` и `*.tfstate.*`
+
+3. `*.tfstate` и `*.tfstate.*`
+
    Игнорируются все файлы оканчивающся на .tfstate вида <что_угодно>.tfstate
+
    Игнорируются все файлы вида <что_угодно>.tfstate.<что_угодно>
-3. `crash.log` и `crash.*.log`
+
+4. `crash.log` и `crash.*.log`
+
    Игнорируется конкретный файл: crash.log
+
    Игнорируются все файлы вида crash.<что_угодно>.log
-4. `*.tfvars` и `*.tfvars.json`
+
+5. `*.tfvars` и `*.tfvars.json`
+
    Игнорируются все файлы оканчивающся на .tfvars вида <что_угодно>.tfvars
+
    Игнорируются все файлы оканчивающся на .tfvars.json вида <что_угодно>..tfvars.json
-5. `override.tf`, `override.tf.json`, `*_override.tf`, `*_override.tf.json`
+
+6. `override.tf`, `override.tf.json`, `*_override.tf`, `*_override.tf.json`
+
    Игнорируется конкретные файлы: override.tf и override.tf.json
+
    Игнорируются все файлы оканчивающся на _override.tf вида <что_угодно>_override.tf
+ 
    Игнорируются все файлы оканчивающся на _override.tf.json вида <что_угодно>_override.tf.json
-6. `.terraform.tfstate.lock.info`, `.terraformrc`, `terraform.rc`
+
+7. `.terraform.tfstate.lock.info`, `.terraformrc`, `terraform.rc`
+
    Игнорируется конкретные файлы:
+
    .terraform.tfstate.lock.info
+
    .terraformrc
+
    terraform.rc
