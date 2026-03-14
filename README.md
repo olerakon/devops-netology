@@ -1,9 +1,11 @@
 # devops-netology
 
 Первое редактирование файла п.8
+
 Вывод команд после клонирования репозитория 
 ```bash
-root@git-km ~/devops-netology (main) # git config --list --show-origin                                 file:/root/.gitconfig   user.name=Kirill Gilels
+root@git-km ~/devops-netology (main) # git config --list --show-origin
+file:/root/.gitconfig   user.name=Kirill Gilels
 file:/root/.gitconfig   user.email=arekan@mail.ru
 file:/root/.gitconfig   core.editor=mcedit
 file:.git/config        core.repositoryformatversion=0
@@ -22,7 +24,9 @@ nothing to commit, working tree clean
 ```
 
 `git diff` и `git diff --staged` показывают разные типы изменений в Git.
+
 `git diff` показывает изменения которые еще не были добавлены с помощью `git add`.
+
 `git diff --staged` "ступенчатая разница" показывает измения в файле подготовленном к коммиту.
 
 В созданной директрии `terraform` был склонирован файл `.gitignore` который позволяет гиту пропускать следующее:
