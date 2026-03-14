@@ -24,3 +24,14 @@ nothing to commit, working tree clean
 `git diff` и `git diff --staged` показывают разные типы изменений в Git.
 `git diff` показывает изменения которые еще не были добавлены с помощью `git add`.
 `git diff --staged` "ступенчатая разница" показывает измения в файле подготовленном к коммиту.
+
+В созданной директрии `terraform` был склонирован файл `.gitignore` который позволяет гиту пропускать следующее:
+
+Игнорируются:
+1. Директории .terraform/
+2. Файлы состояния `*.tfstate` и `*.tfstate.*` (* - любое число символов)
+3. `crash.log`, `crash.*.log` - логи падений Terraform
+4. `*.tfvars`, `*.tfvars.json` - переменные Terraform включающие креденшалы и чувствительную информацию
+5. `override.tf`, `override.tf.json`, `*_override.tf`, `*_override.tf.json` - локальное переопределение ресурсов
+6. `.terraform.tfstate.lock.info` - временные файлы блокировок во время `terraform apply`
+7. `.terraformrc`, `terraform.rc` - Конфигурация CLI
