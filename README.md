@@ -73,3 +73,9 @@ nothing to commit, working tree clean
    .terraformrc
 
    terraform.rc
+
+
+PyCharm commit in main
+
+
+   ![PyCharm](images/img.png)
