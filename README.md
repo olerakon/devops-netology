@@ -35,3 +35,4 @@ nothing to commit, working tree clean
 5. `override.tf`, `override.tf.json`, `*_override.tf`, `*_override.tf.json` - локальное переопределение ресурсов
 6. `.terraform.tfstate.lock.info` - временные файлы блокировок во время `terraform apply`
 7. `.terraformrc`, `terraform.rc` - Конфигурация CLI
+20260325-20:54 Переключился и создал ветку FIX
